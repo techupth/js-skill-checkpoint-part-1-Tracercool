@@ -5,3 +5,12 @@ const inventory = [
   { name: "Orange", price: 30, quantity: 60 },
 ];
 // เริ่มเขียนโค้ดตรงนี้
+
+const minQuantiyy = inventory.reduce((min, item) => {
+  if (item.quantity < min.quantity) {
+    return item;
+  }
+  return min;
+}, inventory[0]);
+
+console.log(`สินค้าที่มีจำนวนต่ำที่สุดในคลังสินค้าคือ ${minQuantiyy.name} ซึ่งมี ${minQuantiyy.quantity} ชิ้น`);  
