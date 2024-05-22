@@ -13,4 +13,4 @@ const minQuantiyy = inventory.reduce((min, item) => {
   return min;
 }, inventory[0]);
 
-console.log(`สินค้าที่มีจำนวนต่ำที่สุดในคลังสินค้าคือ ${minQuantiyy.name} ซึ่งมี ${minQuantiyy.quantity}`);  
+console.log(`สินค้าที่มีจำนวนต่ำที่สุดในคลังสินค้าคือ ${minQuantiyy.name} ซึ่งมี ${minQuantiyy.quantity} ชิ้น`);  
